@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册网站</title>
+    <link rel="stylesheet" href="bootstrap3框架所需文件(1)/css/bootstrap.css">
+    <link rel="stylesheet" href="css/注册页面样式.css">
+</head>
+<body>
+    <div class="contianer">
+        <img src="image/注册页面.jpg" alt="" width=100%  height="700px">
+        <div class="d1">
+            <div class="d2">
+                <p style="color: rgb(238, 238, 23); font-size: 18px;">新用户注册</p>
+                <p style="font-size:  18px; color: gainsboro; font-size: 18px;">USER REGISTER</p>
+            </div>
+            <div class="d3">
+                <div>
+                    账号 &nbsp;&nbsp;&nbsp;
+                </div>
+                <div>
+                    密码 &nbsp;&nbsp;&nbsp;
+                </div>
+                <div>
+                    Email &nbsp;&nbsp;&nbsp;
+                </div>
+                <div>
+                    姓名 &nbsp;&nbsp;&nbsp;
+                </div>
+                <div>
+                    手机号 &nbsp;&nbsp;&nbsp;
+                </div>
+                <div>
+                    性别 &nbsp;&nbsp;&nbsp;
+                </div>
+                <div>
+                    出生日期 &nbsp;&nbsp;&nbsp;
+                </div>
+                <div>
+                    验证码 &nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+            <div class="d4">
+                <form onsubmit="onCheck()" method="post" action="03登录页面.html">
+                <div>
+                    <input type="text" name="账号" placeholder="请输入账号" id="username">
+                </div>
+                <div>
+                    <input type="password" name="密码" placeholder="请输入密码" id="password">
+                </div>
+                <div>
+                    <input type="text" name="邮箱" placeholder="请输入邮箱" id="email">
+                </div>
+                <div>
+                    <input type="text" name="姓名" placeholder="请输入姓名" id="names">
+                </div>
+                <div>
+                    <input type="text" name="手机号" placeholder="请输入手机号" id="phone">
+                </div>
+                <div>
+                   <table>
+                    <td><input type="radio" name="sex" value="男"></td>
+                    <td>男</td>
+                    <td><input type="radio" name="sex" value="女"></td>
+                    <td>女</td>
+                   </table>
+                </div>
+                <div>
+                    <input type="date" id="date">
+                </div>
+                <div>
+                    <span><input type="text" name="验证码" placeholder="请输入验证码" id="captcha" style="width: 90px; height: 30px; border-radius: 5px;"></span>
+                    <span><img src="image/verify_code.jpg" style="width: 60px; height: 20px;"></span>
+                </div>
+                <div>
+                    <input type="submit" value="注册"  name="注册" class="input">
+                </div>
+            </form>
+            </div>
+            <div class="d5">
+                    <div id="uname"></div>
+                    <div id="pass"></div>
+                    <div id="em"></div>
+                    <div id="na"></div>
+                    <div id="ph"></div>
+                    <div id=""></div>
+                    <div id="da"></div>
+                    <div id="cap"></div>
+            </div>
+            <div class="d6">
+                <p>已有账号?<a href="03登录页面.html" style="color: pink;">立即登录</a></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script>
+     //账号
+     document.getElementById("username").onfocus=function(){
+         if(this.value =="")
+         {  
+            document.getElementById("uname").innerText="请输入账号";
+            document.getElementById("uname").style="color: blue"; 
+         }
+         
+     } 
+     document.getElementById("username").onblur=function(){
+         //var str = document.getElementById("box").value;
+         var rg = new RegExp(/^[a-zA-Z0-9]\w{3,15}$/);
+         var result = rg.test(this.value);
+       if(result){
+        document.getElementById("uname").innerText="账号格式正确";
+        document.getElementById("uname").style="color: green";
+            
+       }
+       else{    
+        document.getElementById("uname").innerText="账号格式错误";
+        document.getElementById("uname").style="color: red";       
+       }
+        
+     } 
+
+      //密码
+     document.getElementById("password").onfocus=function(){
+         if(this.value =="")
+         {  
+            document.getElementById("pass").innerText="请输入密码";
+            document.getElementById("pass").style="color: blue"; 
+         }
+         
+     } 
+     document.getElementById("password").onblur=function(){
+         //var str = document.getElementById("box").value;
+         var rg = new RegExp(/^\w{6,20}$/);
+         var result = rg.test(this.value);
+       if(result){
+        document.getElementById("pass").innerText="密码格式正确";
+        document.getElementById("pass").style="color: green";    
+       }
+       else{    
+        document.getElementById("pass").innerText="密码格式错误";
+        document.getElementById("pass").style="color: red";       
+       }
+        
+     } 
+
+     
+
+           //输入邮箱
+        document.getElementById("email").onfocus=function(){
+         if(this.value =="")
+         {  
+            document.getElementById("em").innerText="请输入邮箱";
+            document.getElementById("em").style="color: blue"; 
+         }
+         
+     } 
+     document.getElementById("email").onblur=function(){
+         //var str = document.getElementById("box").value;
+         var rg = new RegExp(/^\w+@\w+\.[a-zA-Z]{2,4}$/);
+         var result = rg.test(this.value);
+       if(result){
+        document.getElementById("em").innerText="邮箱格式正确";
+        document.getElementById("em").style="color: green";    
+       }
+       else{    
+        document.getElementById("em").innerText="邮箱格式错误";
+        document.getElementById("em").style="color: red";       
+       }
+        
+     } 
+
+
+     //姓名
+     document.getElementById("names").onfocus=function(){
+         if(this.value =="")
+         {  
+            document.getElementById("na").innerText="请输入汉字姓名";
+            document.getElementById("na").style="color: blue"; 
+         }
+         
+     } 
+     document.getElementById("names").onblur=function(){
+         //var str = document.getElementById("box").value;
+         var rg = new RegExp(/^[\u4e00-\u9fa5]{0,}$/);
+         var result = rg.test(this.value);
+       if(result){
+        document.getElementById("na").innerText="名字格式正确";
+        document.getElementById("na").style="color: green";    
+       }
+       else{    
+        document.getElementById("na").innerText="名字格式错误";
+        document.getElementById("na").style="color: red";       
+       }
+        
+     } 
+
+     //手机号
+     document.getElementById("phone").onfocus=function(){
+         if(this.value =="")
+         {  
+            document.getElementById("ph").innerText="请输入手机号";
+            document.getElementById("ph").style="color: blue"; 
+         }
+         
+     } 
+     document.getElementById("phone").onblur=function(){
+         //var str = document.getElementById("box").value;
+         var rg = new RegExp(/^1[3|5|6|8]\d{9}$/);
+         var result = rg.test(this.value);
+       if(result){
+        document.getElementById("ph").innerText="手机号格式正确";
+        document.getElementById("ph").style="color: green";    
+       }
+       else{    
+        document.getElementById("ph").innerText="手机号格式错误";
+        document.getElementById("ph").style="color: red";       
+       }
+        
+     } 
+
+     //生日日期
+     document.getElementById("date").onfocus=function(){
+         if(this.value =="")
+         {  
+            document.getElementById("da").innerText="请输入出生日期";
+            document.getElementById("da").style="color: blue"; 
+         }
+         
+     } 
+     document.getElementById("date").onblur=function(){
+         //var str = document.getElementById("box").value;
+         var rg = new RegExp(/^(19[0-9][0-9]|200[0-9])-([1-9]|0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/);
+         var result = rg.test(this.value);
+       if(result){
+        document.getElementById("da").innerText="日期格式正确";
+        document.getElementById("da").style="color: green";    
+       }
+       else{    
+        document.getElementById("da").innerText="日期格式错误";
+        document.getElementById("da").style="color: red";       
+       }
+        
+     } 
+
+     //验证码
+     document.getElementById("captcha").onfocus= function(){
+            if(this.value=="")
+            {
+                document.getElementById("cap").innerText="请输入验证码";
+                document.getElementById("cap").style="color: blue";
+            }
+     }
+     document.getElementById("captcha").onblur=function(){
+         var result = document.getElementById("captcha").value;
+         if(result=="jgmkj")
+         {
+             document.getElementById("cap").innerText="验证码正确";
+             document.getElementById("cap").style="color: green";
+         }
+         else{
+            document.getElementById("cap").innerText="验证码错误";
+             document.getElementById("cap").style="color: red";
+         }
+     }
+
+  
+      
+    function onCheck(){
+        // alert("表单数据被提交了");
+        //在这里利用正则表达式来 校验一下账号密码
+        var username = document.getElementById("username");
+        var password = document.getElementById("password");
+        var email = document.getElementById("email");
+        var phone = document.getElementById("phone");
+        var date = document.getElementById("date");
+        var password1 = document.getElementById("password1");
+
+        //创建正则表达式对象 写正则表达式规则
+        var reg1 = new RegExp(/^[a-zA-Z]\w{3,15}$/);
+        var reg2 = new RegExp(/^\w{6,20}$/);
+        var reg3 = new RegExp(/^\w+@\w+\.[a-zA-Z]{2,4}$/);
+        var reg4 = new RegExp(/^1[3|5|6|8]\d{9}$/);
+        var reg5 = new RegExp(/^(19[0-9][0-9]|200[0-9])-([1-9]|0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/);
+       
+        
+
+        var result1 = reg1.test(username.value);
+        var result2 = reg2.test(password.value);
+        var result3 = reg3.test(email.value);
+        var result4 = reg4.test(phone.value);
+        var result5 = reg5.test(date.value);
+     
+
+
+        if(result1&&result2&&result3&&result4&&result5){
+            
+                alert("格式正确,点击确认,去往登录");
+                // onsubmit事件结果返回true就会提交表单
+                 return true;
+
+          
+        }else{
+            alert("格式错误,请检查...");
+            //onsubmit返回false不提交表单
+            return false;
+        }
+     
+
+
+    }
+</script>
+</html>

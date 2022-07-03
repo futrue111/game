@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录网站</title>
+    <link rel="stylesheet" href="css/登录页面.css">
+    <link rel="stylesheet" href="bootstrap3框架所需文件(1)/css/bootstrap.css">
+</head>
+<body>
+    <div class="contianer-fluid">
+        <img src="image/注册页面背景.jpg" alt="">
+            <div class="d1">
+                <div>账号</div>
+                <div>密码</div>
+               
+            </div>
+            <div class="d2">
+                <form method="get" action="001首页.html" >
+                    <div>
+                        <table>
+                            <tr>
+                                <td><input type="text" placeholder="请输入账号" name="账号" id="username"></td>
+                                <td>
+                                    <span id="uname"></span>
+                                </td>
+                            </tr>
+                        </table>  
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <td><input type="password" placeholder="请输入密码" name="密码" id="password"></td>
+                                <td>
+                                    <span id="pass"></span>
+                                </td>
+                            </tr>
+                        </table>   
+                    </div>
+                    <div style="height: 20px;">
+                        <table>
+                            <tr>
+                                <td><input type="checkbox" name="记住密码"> </td>
+                                <td>记住密码</td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td><a href="02注册页面.html" target="_blank" style="text-decoration: none;"> 未注册，立即注册！</a></td>
+                            </tr>
+                        </table>                     
+                    </div>
+                    <div style="height: 40px;">
+                        <a href="#"><input type="submit" value="登录" name="登录" style="width: 60px;"></a>
+                    </div>
+                </form> 
+            </div>
+    </div>
+</body>
+<script>
+        //账号
+    document.getElementById("username").onfocus=function(){
+         if(this.value =="")
+         {  
+            document.getElementById("uname").innerText="请输入账号";
+            document.getElementById("uname").style="color: blue"; 
+         }
+         
+     } 
+     document.getElementById("username").onblur=function(){
+         //var str = document.getElementById("box").value;
+         var rg = new RegExp(/^\w{3,15}$/);
+         var result = rg.test(this.value);
+       if(result){
+        document.getElementById("uname").innerText="账号格式正确";
+        document.getElementById("uname").style="color: green";
+            
+       }
+       else{    
+        document.getElementById("uname").innerText="账号格式错误";
+        document.getElementById("uname").style="color: red";       
+       }
+        
+     } 
+
+      //密码
+     document.getElementById("password").onfocus=function(){
+         if(this.value =="")
+         {  
+            document.getElementById("pass").innerText="请输入密码";
+            document.getElementById("pass").style="color: blue"; 
+         }
+         
+     } 
+     document.getElementById("password").onblur=function(){
+         //var str = document.getElementById("box").value;
+         var rg = new RegExp(/^\w{6,20}$/);
+         var result = rg.test(this.value);
+       if(result){
+        document.getElementById("pass").innerText="密码格式正确";
+        document.getElementById("pass").style="color: green";    
+       }
+       else{    
+        document.getElementById("pass").innerText="密码格式错误";
+        document.getElementById("pass").style="color: red";       
+       }
+        
+     } 
+</script>
+</html>

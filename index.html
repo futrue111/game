@@ -1,1 +1,401 @@
-this is index html
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏社区</title>
+    <link rel="stylesheet" href="bootstrap3框架所需文件(1)/css/bootstrap.css">
+   <link rel="stylesheet" href="css/首页样式.css">
+
+    <!-- <link rel="icon" href="https://fastly.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.31/favicon.ico"> -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/non-responsive/">
+
+ 
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://fastly.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.31/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="https://fastly.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.31/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://fastly.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.31/examples/non-responsive/non-responsive.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="https://fastly.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.31/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="https://fastly.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.31/assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="bootstrap3框架所需文件(1)/js/jquery.min.js" type="text/JavaScript"></script>
+    <script src="bootstrap3框架所需文件(1)/js/bootstrap.min.js"></script>
+	
+	<body>
+        <div class="container-fluid" style="margin-bottom: 0;">
+                <!-- <div class="top"> -->
+            <nav class="navbar navbar-fixed-top navbar-inverse" style="margin-bottom: 0px; height: 60px;">
+                <div class="container">
+                  <div class="navbar-header">
+                    <!-- The mobile navbar-toggle button can be safely removed since you do not need it in a non-responsive implementation -->
+                    <a class="navbar-brand" href="#">游戏社区</a>
+                  </div>
+                  <!-- Note that the .navbar-collapse and .collapse classes have been removed from the #navbar -->
+                  <div id="navbar">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">首页</a></li>
+                      <li><a href="#">论坛</a></li>
+                      <li><a href="#">评分</a></li>
+                      <li><a href="#">赛事</a></li>
+                      <li><a href="#">专题</a></li>
+                      <li><a href="08资讯新闻.html" target="_blank">游戏资讯</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="请输入关键字" id="text">
+                      </div>
+                      <button type="submit" class="btn btn-default"> 
+                         <a id="#content">搜索</a>
+                        </button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="02注册页面.html" target="_blank">注册</a></li>
+                      <li><a href="03登录页面.html" target="_blank">登录</a></li>
+                    </ul>
+                  </div><!--/.nav-collapse -->
+                </div>
+              </nav>
+        <!-- </div> -->
+		<!-- <div class="banner"> -->
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="margin:0px 87px;;">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                </ol>
+              
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox" align="center">
+                  <div class="item active">
+                    <img src="image/轮播图1.jpg" alt="...">
+                    <div class="carousel-caption">
+                    
+                    </div>
+                  </div>
+                  <div class="item" align="center">
+                    <img src="image/轮播图2.jpg" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                  <div class="item" align="center">
+                    <img src="image/轮播图3.png" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                  <div class="item" align="center">
+                    <img src="image/轮播图4.jpg" alt="..." style="height: 550px; width: 1440px;">
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                  
+                </div>
+              
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+    <!-- 热门游戏 -->
+    <div class="d1">
+        <div class="d2"><a href="#" style="font-size: x-large;" id="content1">热门游戏</a></div>
+      <table style="width: 100%;">  
+        <tr>
+          <td style="text-align: right;"><img src="image/永恒之塔.jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">永恒之塔</p>
+            <p>永恒之塔怀旧服，经典重新，等你再续前缘！</p>
+            <p><a href="#">专区</a>|<a href="#">论坛</a>|<a href="#">下载</a></p>
+
+          </td>
+         
+          <td style="text-align: right;"><img src="image/万国觉醒.jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">万国觉醒</p>
+            <p>2020年最强SLG手游</p>
+            <p><a href="#">专区</a>|<a href="#">论坛</a>|<a href="#">下载</a></p>
+          </td>
+
+          <td style="text-align: right;"><img src="image/剑网归来.jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">剑网1-归来</p>
+            <p>经典复刻</p>
+            <p><a href="#">专区</a>|<a href="#">论坛</a>|<a href="#">下载</a></p>
+          </td>
+          
+        </tr>
+
+        <tr>
+          <td style="text-align: right;"><img src="image/地下城.jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">地下城与勇士</p>
+            <p>超强打击感。刷图、PK，痛快！</p>
+            <p>
+                <a href="#">专区</a>
+                <a href="#">论坛</a>|
+                <a href="#">数据库</a>|
+                <a href="#">新闻</a>|
+                <a href="#">下载</a>
+            </p>
+          </td>
+         
+          <td style="text-align: right;"><img src="image/古剑奇谭.jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">古剑奇谭网络版</p>
+            <p>真时长，真仙侠，真国风</p>
+            <p><a href="#">专区</a>|<a href="#">礼包</a>|<a href="#">捏脸下载</a></p>
+          </td>
+
+          <td style="text-align: right;"><img src="image/魔兽世界.jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">魔兽世界</p>
+            <p>战无休 而惑不息 吾辈何以为战</p>
+            <p>
+                <a href="#">专区</a>
+                |<a href="#">论坛</a>|
+                <a href="#">数据库</a>|
+                <a href="#">新闻</a>|
+                <a href="#">下载</a></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right;"><img src="image/梦幻西游.jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">梦幻西游</p>
+            <p>国产第一网游，回合巅峰之作</p>
+            <p><a href="#">专区</a>|<a href="#">论坛</a><a href="#">新闻</a>||<a href="#">下载</a></p>
+          </td>
+         
+          <td style="text-align: right;"><img src="image/王者荣耀.jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">王者荣耀</p>
+            <p>5v5竞技手游</p>
+            <p><a href="#">专区</a>|<a href="#">攻略</a>|<a href="#">视频</a></p>
+          </td>
+
+          <td style="text-align: right;"><img src="./image/流放之路.jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">流放之路</p>
+            <p>踏入黑暗的神秘世界体验传奇的流亡之旅</p>
+            <p><a href="#">专区</a>|<a href="#">论坛</a>|<a href="#">下载</a></p>
+          </td>
+        </tr>
+      </table>
+      </div>
+     
+
+
+      <!-- 推荐游戏 -->
+      <div class="d1">
+        <div class="d2">  <a href="#" style="font-size: x-large;" id="content2">推荐游戏</a></div>
+      <table style="width: 100%;" >
+        <tr>
+          <td style="text-align: right;"><img src="image/剑网3.jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">剑网3 </p>
+            <p>无剑侠，不情缘！国产武侠巅峰</p>
+            <p><a href="#">专区</a>|<a href="#">论坛</a>|<a href="#">新闻</a>|<a href="#">下载</a></p>
+
+          </td>
+         
+          <td style="text-align: right;"><img src="image/剑灵.jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">剑灵</p>
+            <p>极致体验，想象由你突破</p>
+            <p><a href="#">专区</a>|<a href="#">论坛</a>|<a href="#">新闻</a><a href="#">下载</a></p>
+          </td>
+
+          <td style="text-align: right;"><img src="image/魔域.jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">魔域</p>
+            <p>魔域的世界有你更精彩</p>
+            <p><a href="#">专区</a>|<a href="#">论坛</a>|<a href="#">下载</a></p>
+          </td>
+          
+        </tr>
+
+        <tr>
+          <td style="text-align: right;"><img src="image/原神.jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">原神</p>
+            <p>七种元素神灵信仰交汇的幻想世界提瓦特！</p>
+            <p><a href="#">专区</a>|<a href="#">论坛</a>|<a href="#">下载</a></p>
+          </td>
+         
+          <td style="text-align: right;"><img src="image/和平精英.jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">和平精英</p>
+            <p>完美还原端游体验的手游</p>
+            <p><a href="#">专区</a>|<a href="#">论坛</a>|<a href="#">下载</a></p>
+          </td>
+
+          <td style="text-align: right;"><img src="image/笑傲江湖.jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">笑傲江湖</p>
+            <p>2013年期待国产第一武侠网游</p>
+            <p><a href="#">专区</a>|<a href="#">论坛</a>|<a href="#">下载</a></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right;"><img src="image/剑与远征.jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">剑与远征</p>
+            <p>剑与远征的玩家讨论集结地</p>
+            <p><a href="#">专区</a>|<a href="#">论坛</a>|<a href="#">下载</a></p>
+          </td>
+         
+          <td style="text-align: right;"><img src="image/怪物猎人.jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">怪物猎人世界</p>
+            <p>多平台的怪物猎人和谐讨论论坛</p>
+            <p><a href="#">专区</a>|<a href="#">论坛</a>|<a href="#">下载</a></p>
+          </td>
+
+          <td style="text-align: right;"><img src="./image/公主连结ReDive.jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">公主连结ReDive</p>
+            <p>喜欢公主连接的一起来玩吧</p>
+            <p><a href="#">专区</a>|<a href="#">论坛</a>|<a href="#">下载</a></p>
+          </td>
+        </tr>
+      </table>
+      </div>
+
+
+      <!-- 硬核游戏 -->
+      <div class="d1">
+        <div class="d2">  <a href="#" style="font-size: x-large;" id="content3">硬核游戏</a></div>
+        <table style="width: 100%;" >
+        <tr>
+          <td style="text-align: right;"><img src="image/炉石传说.jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">炉石传说</p>
+            <p>暴雪首款免费休闲卡牌网游</p>
+            <p><a href="#">专区</a>|<a href="#">论坛</a>|<a href="#">下载</a></p>
+
+          </td>
+         
+          <td style="text-align: right;"><img src="image/问道.jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">问道</p>
+            <p>问道朋友们集合了</p>
+            <p><a href="#">专区</a>|<a href="#">论坛</a>|<a href="#">下载</a></p>
+          </td>
+
+          <td style="text-align: right;"><img src="image/失落的方舟 .jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">失落的方舟</p>
+            <p>黑风无锁定新作《失落的方舟》</p>
+            <p><a href="#">专区</a>|<a href="#">论坛</a>|<a href="#">下载</a></p>
+          </td>
+          
+        </tr>
+
+        <tr>
+          <td style="text-align: right;"><img src="image/龙族幻想.png" alt=""></td>
+          <td> 
+            <p class="gametitle">龙族幻想</p>
+            <p>腾讯2019年旗舰级RPG大作</p>
+            <p><a href="#">专区</a>|<a href="#">论坛</a>|<a href="#">下载</a></p>
+          </td>
+         
+          <td style="text-align: right;"><img src="image/拉结尔.jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">拉结尔</p>
+            <p>探索黑暗世界，揭开史诗篇章</p>
+            <p><a href="#">专区</a>|<a href="#">论坛</a>|<a href="#">下载</a></p>
+          </td>
+
+          <td style="text-align: right;"><img src="image/魔域.jpg" alt=""></td>
+          <td> 
+            <p class="gametitle">魔域</p>
+            <p>魔域的世界有你更精彩</p>
+            <p><a href="#">专区</a>|<a href="#">论坛</a>|<a href="#">下载</a></p>
+          </td>
+        </tr>
+      </table>
+      </div>
+      
+
+    <!-- 底部 -->
+        <div class="contianer-fluid bottom-div">
+            <div class="row">
+            <div class="col-md-4 width-d1" align="center">
+                <div class="span0">
+                    <div>
+                        <span class="span5">yxsq</span>
+                    </div>
+                    <div>
+                        <span class="span1">游</span>
+                        <span class="span2">戏</span>
+                        <span class="span3">社</span>
+                        <span class="span4">区</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p1 width-d1">
+                <p>商务合作</p>
+                <p> wangchuang#donews.com </p>
+                <p>销售合作</p>
+                <p>wangyanzhe#donews.com</p>
+                <p>多牛传媒旗下网站</p>
+            </div>
+            <div class="col-md-4 p1 width-d1">
+                <p>北京月神之箭网络科技有限公司 Copyright 2018</p>
+                <p>京ICP备16021487号-7</p>
+                <p>京公网安备 11010802027588号</p>
+            </div>
+        </div>
+        </div>
+		
+  
+    <script src="https://fastly.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="https://fastly.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.31/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://fastly.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.31/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://fastly.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.31/assets/js/ie10-viewport-bug-workaround.js"></script>
+	</body>
+  <script>
+    document.getElementById("#content").onclick = function(){
+      var text = document.getElementById("text").value;
+      if(text=="热门游戏")
+      {
+        document.getElementById("content1").id="content";
+        document.getElementById("content2").id="";
+        document.getElementById("content3").id="";
+      }
+      else if(text=="推荐游戏")
+      {
+        document.getElementById("content1").id="";
+        document.getElementById("content2").id="content";
+        document.getElementById("content3").id="";
+      }
+      else if(text=="硬核游戏")
+      {
+        document.getElementById("content1").id="";
+        document.getElementById("content2").id="";
+        document.getElementById("content3").id="content";
+      }
+      else
+      {
+        document.getElementById("content1").id="content1";
+        document.getElementById("content2").id="content2";
+        document.getElementById("content3").id="content3";
+      }
+      
+    }
+  </script>
+</html>

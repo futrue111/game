@@ -1,0 +1,40 @@
+.d1 {
+            
+    height: 100px;
+    width: 180px;
+    position: absolute;
+    top: 85px;
+    left: 600px;
+}
+.d2 {
+    
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 80px;
+    left: 800px;
+}
+.d1>div {
+    text-align: right;
+    height: 45px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-top: 19px;
+}
+.d2>form>div {
+    text-align: left;
+    height: 40px;
+    width: 300px;
+    margin-top: 20px;
+}
+input {
+    height: 30px;
+    border-radius: 5px;
+
+}
+img {
+    height: 660px;
+    width: 100%;
+    filter: blur(3px);
+}

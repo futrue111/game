@@ -1,0 +1,204 @@
+
+
+body {
+    background-color: #f5f0f0!important;
+}
+.d1-row {
+    background-color: #333;
+    
+}
+
+
+/* 盒子样式 */
+/* div {
+    background-color: rgb(237, 236, 250);
+    border: 1px dashed #ccc;
+} */
+
+.top{
+    width: 1200px;
+    /* height: 200px; */
+    margin:0 auto;
+}
+
+.banner{
+    width: 1200px;
+    /* height: 80px; */
+    margin:10px auto;
+}
+.main{
+    width: 1200px;
+    margin:10px auto;
+    border:0;
+    background-color: transparent;
+}
+.clearFix:after{
+    content: "";
+    display: block;
+    clear:both;
+}
+.left{
+    float: left;
+    width: 750px;
+    /* height: 250px; */
+}
+.right{
+    float: right;
+    width: 450px;
+    /* height: 250px; */
+}
+.footer{
+    width: 100%;
+    height: 150px;
+    margin:0 auto;
+    color: #999;
+    background: #333;
+    text-align: center;
+    
+}
+
+/* 导航条样式 */
+.color-btn {
+   background-color: black!important;
+}
+.font1 {
+    font-weight: bold;
+    color: black!important;
+    
+}
+
+.font2>li>a {
+    font-size: 15px;
+    color: white!important;
+}
+.input {
+    border-radius: 5px;
+    height: 30px;
+}
+
+/* banner样式 */
+.d2 {
+    height: 50px;
+    text-align: left;
+}
+.d2>span {
+    line-height: 50px;
+}
+
+/* left样式 */
+.img {
+    width: 200px;
+    height: 150px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.tr1 {
+    height: 180px;
+}
+.tr1:hover {
+    background-color: grey;
+}
+
+/* right样式 */
+.tab {
+    width: 100%;
+    text-align: center;
+}
+.tr2 {
+    height: 50px;
+    border-bottom: 2px solid rgb(238, 238, 23);
+}
+.tr3 {
+    height: 30px;
+    border-bottom: 2px dotted #cbcbcb;
+}
+.tr3:hover {
+    background-color: grey;
+}
+
+.ul {
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.ul>li:hover {
+    color: rgb(194, 94, 94);
+    text-decoration: underline;
+}
+
+
+.tr4 {
+    background-color: rgb(160, 159, 159);
+    border-radius: 3px;
+}
+.td1 {
+    text-align: left;
+}
+.td2 {
+    text-align: center;
+    background-color: rgb(230, 230, 34);
+    border-radius: 5px;
+   
+}
+.td2:hover {
+    background-color: red;
+}
+.bat1 {
+    height: 6px;
+    width: 100px;
+    background: rgb(247, 247, 11);
+    position: relative;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+/* footer样式 */
+.ft-text-ailgn {
+    text-align: center;
+    margin: 0 auto;
+ 
+}
+.bottom-div {
+    background-color: #31393c;
+    height: 250px;
+    margin-top: 10px;
+    width: 100%;
+  
+}
+.p1 {
+    font-size: large;
+    font-family: "微软雅黑";
+    text-align: left;
+    padding-left: 20px;
+    color: #f8e5c3;  
+}
+.width-d1 {
+ width: 120px;
+ border-left: 2px solid #f8e5c3;
+
+}
+
+/* logo样式 */
+.span0 {
+    color: #f8e5c3;
+    font-family: "微软雅黑";
+    text-align: center;
+}
+.span1 {
+    font-size: 40px;
+}
+.span2 {
+    font-size: 20px;
+}
+.span3 {
+    font-size: 20px;
+}
+.span4 {
+    font-size: 40px;
+}
+.span5 {
+    font-weight: 900;
+    font-size: 60px;
+}

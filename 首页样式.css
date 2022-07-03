@@ -1,0 +1,100 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    /* background-color: #222!important; */
+    background-color: #fff0cd!important;
+    margin-bottom: 0px!important;
+    padding-bottom: 0px!important;
+}
+
+
+
+/* 游戏表格样式 */
+.d1 {
+    margin:0px 87px;
+    background-color: azure;
+    margin-top: 20px;
+}
+.d2 {
+    border-bottom: 3px solid #3a9bff;
+}
+a {
+    color: blue;
+    }
+.gametitle {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 微软雅黑;
+    }
+.container1 {
+    padding-right: 15px;
+    padding-left: 15px;}
+tr {
+ 
+   height: 100px;
+
+  }
+tr:hover {
+    background: #efefef;
+}
+td {
+    width: 16%;
+    padding-left: 50px!important;
+    
+  }
+hr {
+    
+    margin-top: 0px;
+    height: 5px;
+    color: crimson;
+  }
+
+ 
+
+/* 底部样式 */
+  .bottom-div {
+    background-color: #31393c;
+    height: 250px;
+    margin-top: 10px;
+    width: 100%;
+  
+}
+.p1 {
+    font-size: large;
+    font-family: "微软雅黑";
+    text-align: left;
+    padding-left: 20px;
+    color: #f8e5c3;  
+}
+.width-d1 {
+ width: 120px;
+ border-left: 2px solid #f8e5c3;
+
+}
+
+/* logo样式 */
+.span0 {
+    color: #f8e5c3;
+    font-family: "微软雅黑";
+    text-align: center;
+}
+.span1 {
+    font-size: 40px;
+}
+.span2 {
+    font-size: 20px;
+}
+.span3 {
+    font-size: 20px;
+}
+.span4 {
+    font-size: 40px;
+}
+.span5 {
+    font-weight: 900;
+    font-size: 60px;
+}
+
